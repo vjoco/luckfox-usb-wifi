@@ -30,6 +30,27 @@ scsi support
 
 and USB_EHCI_HCD
 
+Location:                                                                                                        x
+  x     -> Device Drivers                                                                                              x
+  x       -> Network device support (NETDEVICES [=y])                                                                  x
+  x         -> Wireless LAN (WLAN [=y])                                                                                x
+  x           -> Realtek devices (WLAN_VENDOR_REALTEK [=y])                                                            x
+  x (1)         -> Realtek rtlwifi family of devices (RTL_CARDS [=m]) 
+
+------ kernel options steps
+cd sysdrv/source/kernel/
+cp ./arch/arm/configs/luckfox_rv1106_linux_defconfig .config
+make ARCH=arm menuconfig
+
+-after the changes
+
+make ARCH=arm savedefconfig
+cp defconfig ./arch/arm/configs/luckfox_rv1106_linux_defconfig
+cd ../../../
+./build.sh kernel
+
+ boot.img was created
+
 
 -- removing adb? and other kernel staff related with luckfox original mini-a software
 
