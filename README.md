@@ -22,5 +22,11 @@ Modify the relevant device tree to set the USB mode to host mode.
     dr_mode = "host";
 };
 
+scsi support
+![image](https://github.com/vjoco/luckfox-usb-wifi/assets/16479426/19013121-4b07-4026-83d1-3b0fbde8fd35)
+![Uploading image.png…]()
+
+
+
 -- removing adb? and other kernel staff related with luckfox original mini-a software
 
