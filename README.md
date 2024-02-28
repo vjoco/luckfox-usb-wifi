@@ -38,15 +38,21 @@ Location:                                                                       
   x (1)         -> Realtek rtlwifi family of devices (RTL_CARDS [=m]) 
 
 ------ kernel options steps
+
 cd sysdrv/source/kernel/
+
 cp ./arch/arm/configs/luckfox_rv1106_linux_defconfig .config
+
 make ARCH=arm menuconfig
 
 -after the changes
 
 make ARCH=arm savedefconfig
+
 cp defconfig ./arch/arm/configs/luckfox_rv1106_linux_defconfig
+
 cd ../../../
+
 ./build.sh kernel
 
  boot.img was created
