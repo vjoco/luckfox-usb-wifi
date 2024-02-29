@@ -72,7 +72,7 @@ edit the /etc/network/interfaces accordingly ... the name of the usb connection 
 
 you should get something like (dmesg):
 
- * Setting hostname ... [ ok ]
+` * Setting hostname ... [ ok ]
  * Starting WPA Supplicant ... [ ok ]
  * Starting networking ...[    2.550312] ieee80211 phy0: rt2x00lib_request_firmware: Info - Loading firmware file 'rt2870.bin'
 [    2.553051] ieee80211 phy0: rt2x00lib_request_firmware: Info - Firmware detected - version: 0.36
@@ -100,6 +100,8 @@ PING google.com (216.58.215.142): 56 data bytes
 64 bytes from 216.58.215.142: seq=0 ttl=115 time=25.335 ms
 64 bytes from 216.58.215.142: seq=1 ttl=115 time=32.477 ms
 64 bytes from 216.58.215.142: seq=2 ttl=115 time=21.694 ms
+
+`
 
 
 
